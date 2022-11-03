@@ -1,0 +1,27 @@
+body{
+    background-image: url(./image11/bg_main.gif);
+    background-size: cover;
+    margin: 0;
+}
+.container{
+    width: 1020px;
+    margin: 0 auto;
+}
+.topbar{
+    background: #9f5bbb;
+    width: 100%;
+   float: left;
+   padding: 5px 15px;
+   color: white;
+}
+.topbar .topbar-left{
+    float: left;
+}
+.topbar .topbar-right{
+   float: right;
+   font-size: 12px;
+}
+.topbar-right a{
+    color: white;
+    font-size: 12px;
+}
