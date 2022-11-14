@@ -68,10 +68,15 @@
 /* end : header*/ 
 
 /* start: menubar*/
-
-.menubar .-navbar-collapse ul{
-    background-color: gray;
-    padding: 1px ;
+.menubar{}
+.menubar .collapse .navbar-nav li{
+  font-size: 13px;
+  padding: 3px 5px 0;
+  background-color: #ECECEC;
+ border-left: 1px solid rgba(17, 17, 17, 0.486);
+}
+.menubar .navbar li:first-child{
+    border: none;
 }
 
 /* end: menubar*/
