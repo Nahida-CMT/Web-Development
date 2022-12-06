@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- for loop -->
+    <h1>for loop</h1>
+    <div id="forloop">for loop</div>
+    
+
+    <!-- while loop -->
+    <h2>while loop</h2>
+    <div id="whileloop">while loop</div>
+
+    <!-- do while loop -->
+    <h3>do while loop</h3>
+    <div id="dowhileloop"></div>
+
+    <!-- loop while -->
+    <h4>loop while</h4>
+    <div id="loopwhile">loopwhile</div>
+
+
+    <script>
+        // for loop
+        var text = "";
+        for(let i=2 ; i<10 ; i++){
+            text = text + "This is number " + i +"<br>";
+            }
+            document.getElementById("forloop").innerHTML = text;
+
+         // while loop
+            let x = 0;
+            var text2 = "";
+            while(x<10){
+                text2 = text2 + "This is number "+ x + "<br>";
+                x++;
+            }
+            document.getElementById("whileloop").innerHTML = text2;
+
+        // do while loop
+         let z = 0;
+         var text3 = "";
+         do{
+            text3 = text3 + "This is number "+ z + "<br>";
+            z++;
+            if(z == 3){
+                break;
+            }
+         }
+         while(z<8);
+         document.getElementById("dowhileloop").innerHTML = text3 ;
+
+        //  loop while
+        const cars = ["BMW", "Volvo", "Saab", "Ford"];
+          let i = 0;
+          let text4 = "";
+
+          for (;cars[i];) {
+          text4 += cars[i];
+          i++;
+          }
+          document.getElementById("loopwhile").innerHTML = text4 ;
+          
+        //   
+    </script>
+    
+</body>
+</html>
