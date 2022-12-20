@@ -1,45 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 <body>
-
-<h1>My first PHP page</h1>
-
-<?php
-$color = "Nahida";
-echo $color . "<br>";
-
-$txt = "text";
-echo "this is $txt"."<br>";
-
-// variable concat
-$txt2 = "This is text two,";
-echo "This is text one, ".$txt2."This is text three"."<br>" ;
-
-// variable addition
-$x = 5;
-$y = 10;
-echo $x + $y."<br>";
-
-// array
-$cars = array("VOLVO","BMW","TOYOTA");
-var_dump($cars) . "<br>";
-
-// class
-class car {
-    public $model = " MERCEDES BENSE";
-    public $color = "BLACK";
-     
-     public function getCarInformation(){
-        return "model :" . $this->model ."color :" .$this->color;
+    <?php
+    // function
+    function fullName($fname,$lname){
+        echo $fname . "  " . $lname . "<br>";
     }
-} 
-$car1 = new car();
-echo $car1->getCarInformation() . "<br>";
+    fullName("Nahida","Sultana". "<br>");
 
-// constant
-define("dbName", "database1");
-echo dbName;
-?>
+    // Associative Array
+    $person = array("Nahida" => 600, "Emu" => 500, "Tania" => 700, "Maksuda" => 800);
+    echo $person["Emu"];
+    echo $person["Nahida"] . "<br>";
 
+    // Array length count
+    $cars = array("Volvo","Toyota","BMW");
+    echo count($cars) . "<br>";
+    for ($x = 0; $x < count($cars); $x++){
+        echo $cars[$x] . "<br>";
+    }
+
+    // Super Global
+    var_dump($_SERVER);
+    echo "<br>";
+    echo $_SERVER["HTTP_HOST"];
+
+    
+
+
+    ?>
+    
 </body>
 </html>
